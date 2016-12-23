@@ -55,7 +55,7 @@ body = "null"
 offmarket = False
 if "For Rent" in status_text:
     body = "The apartment is still For Rent..."+str(datetime.datetime.now())+"\n"
-#    mySendMail(sender, receivers, subject, body)
+    mySendMail(sender, receivers, subject, body)
 elif "Off Market" in status_text:
     body = "\n**UPDATE\nThe apartment is now Off Market!"+str(datetime.datetime.now())+"\n" + url
     mySendMail(sender, receivers, subject, body)
